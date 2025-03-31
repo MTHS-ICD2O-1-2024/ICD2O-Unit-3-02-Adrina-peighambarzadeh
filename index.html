@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8" />
 
-  <meta name="description" content="Area of Trapezoid, with JS" />
+  <meta name="description" content="Volume of a pyramid, with JS" />
 
   <meta name="keywords" content="mths, icd2o" />
 
@@ -27,7 +27,7 @@
 
   <link rel="manifest" href="site.webmanifest" />
 
-  <title>Area of Trapezoid, with JS</title>
+  <title>Volume of a pyramid, with JS</title>
 </head>
 
 <body>
@@ -38,30 +38,30 @@
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">Area of Trapezoid, with JS</span>
+        <span class="mdl-layout-title">Volume of a pyramid, with JS</span>
       </div>
     </header>
 
     <main class="mdl-layout__content">
       <div class="right-image">
-        <img src="./images/Screenshot 2025-03-29 185520.png" alt="Area of Trapezoid image" />
+        <img src="./images/pyramid.png" alt="Volume of a pyramid, with JS" />
       </div>
 
       <br />
 
-      <div class="page-content-heading">Formula</div>
+      <div class="page-content-heading">Formulas</div>
 
-      <div class="page-content-heading">Area = [(a + b) / 2] x h</div>
+      <div class="page-content-heading">V = (L x W x H) / 3</div>
 
       <div class="page-content">Please enter integers for dimensions:</div>
 
       <form>
-        <label class="page-content">a base: </label>
+        <label class="page-content">Length: </label>
 
         <div class="mdl-textfield mdl-js-textfield">
-          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="a-base-of-trapezoid" />
+          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="length-of-pyramid" />
 
-          <label class="mdl-textfield__label" for="a-base-of-trapezoid">a base of trapezoid (mm)</label>
+          <label class="mdl-textfield__label" for="a-base-of-trapezoid">Lenght of pyramid (mm)</label>
 
           <span class="mdl-textfield__error">Input is not a number.</span>
         </div>
@@ -70,12 +70,12 @@
 
         <br />
 
-        <label class="page-content">b base: </label>
+        <label class="page-content">Width: </label>
 
         <div class="mdl-textfield mdl-js-textfield">
-          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="b-base-of-trapezoid" />
+          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="width-of-pyramid" />
 
-          <label class="mdl-textfield__label" for="b-base-of-trapezoid">b base of trapezoid (mm)</label>
+          <label class="mdl-textfield__label" for="width-of-pyramid">Width-of-pyramid (mm)</label>
 
           <span class="mdl-textfield__error">Input is not a number.</span>
         </div>
@@ -87,9 +87,9 @@
         <label class="page-content">height: </label>
 
         <div class="mdl-textfield mdl-js-textfield">
-          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="height-of-trapezoid" />
+          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="height-of-pyramid" />
 
-          <label class="mdl-textfield__label" for="height-of-trapezoid">height of trapezoid (mm)</label>
+          <label class="mdl-textfield__label" for="height-of-pyramid">height of pyramid (mm)</label>
 
           <span class="mdl-textfield__error">Input is not a number.</span>
         </div>
@@ -101,8 +101,8 @@
         <!-- Accent-colored raised button with ripple -->
 
         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-          onclick="calculateAreaOfTriangle()" type="button">
-          Calculate Area
+          onclick="calculateVolumepyramid()" type="button">
+          Calculate volume
         </button>
       </form>
 

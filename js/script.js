@@ -18,28 +18,28 @@
 
 */
 
-function calculateAreaOfTriangle() {
+function calculateVolumepyramid() {
   // input
 
-  const aBaseOfTrapezoid = parseFloat(
-    document.getElementById("a-base-of-trapezoid").value
+  const lengthOfPyramid = parseFloat(
+    document.getElementById("length-of-pyramid").value
   )
 
-  const bBaseOfTrapezoid = parseFloat(
-    document.getElementById("b-base-of-trapezoid").value
+  const widthOfPyramid = parseFloat(
+    document.getElementById("width-of-pyramid").value
   )
 
-  const heightOfTrapezoid = parseFloat(
-    document.getElementById("height-of-trapezoid").value
+  const heightOfPyramid = parseFloat(
+    document.getElementById("height-of-pyramid").value
   )
 
   // process
 
-  const areaOfTrapezoid =
-    ((aBaseOfTrapezoid + bBaseOfTrapezoid) / 2) * heightOfTrapezoid
+  const volumeOfPyramid =
+    (lengthOfPyramid * widthOfPyramid * heightOfPyramid) / 3 
 
   // output
 
   document.getElementById("answer").innerHTML =
-    "Area of your Trapezoid is: " + areaOfTrapezoid + " mm²"
+    "Volume is: " + volumeOfPyramid + " mm²"
 }
