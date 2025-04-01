@@ -41,5 +41,5 @@ function calculateVolumepyramid() {
   // output
 
   document.getElementById("answer").innerHTML =
-    "Volume is: " + volumeOfPyramid + " mm²"
+    "Volume is: " + volumeOfPyramid + " mm³"
 }
